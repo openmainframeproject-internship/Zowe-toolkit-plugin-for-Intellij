@@ -8,11 +8,11 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Document | Description | Document Name |
 |---|---|---|
 | Project Plan | Overall week by week plan of milestones | |
-| Week 1 Status Report | learn Kotlin, go through existing code | 210614-210704.md | 
-| Week 2 Status Report | learn Kotlin, go through existing code | 210614-210704.md |
-| Week 3 Status Report | learn Kotlin, go through existing code | 210614-210704.md |
-| Week 4 Status Report | look into the ways to test the existing code | 210705-210718.md |
-| Week 5 Status Report | look into the ways to test the existing code | 210705-210718.md |
+| Week 1 Status Report | Learn Kotlin, go through existing code | 210614-210704.md | 
+| Week 2 Status Report | Learn Kotlin, go through existing code | 210614-210704.md |
+| Week 3 Status Report | Learn Kotlin, go through existing code | 210614-210704.md |
+| Week 4 Status Report | Look into the ways to test the existing code | 210705-210718.md |
+| Week 5 Status Report | Look into the ways to test the existing code | 210705-210718.md |
 | Week 6 Status Report | | |
 | Week 7 Status Report | | |
 | Week 8 Status Report | | |
