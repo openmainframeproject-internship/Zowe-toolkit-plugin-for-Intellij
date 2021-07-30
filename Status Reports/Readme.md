@@ -13,7 +13,7 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Week 3 Status Report | Learn Kotlin, go through existing code | 210614-210704.md |
 | Week 4 Status Report | Look into the ways to test the existing code | 210705-210718.md |
 | Week 5 Status Report | Look into the ways to test the existing code | 210705-210718.md |
-| Week 6 Status Report | | |
+| Week 6 Status Report | Meeting with IBA, pipeline for unit and api tests | 210719-210725.md |
 | Week 7 Status Report | | |
 | Week 8 Status Report | | |
 | Week 9 Status Report | | |
