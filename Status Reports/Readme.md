@@ -14,7 +14,7 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Week 4 Status Report | Look into the ways to test the existing code | 210705-210718.md |
 | Week 5 Status Report | Look into the ways to test the existing code | 210705-210718.md |
 | Week 6 Status Report | Meeting with IBA, pipeline for unit and api tests | 210719-210725.md |
-| Week 7 Status Report | | |
+| Week 7 Status Report | Deeper dive into GitHub actions | 210726-210801.md |
 | Week 8 Status Report | | |
 | Week 9 Status Report | | |
 | Week 10 Status Report | | |
