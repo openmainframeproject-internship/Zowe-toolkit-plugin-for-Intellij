@@ -9,6 +9,6 @@ To be structured as needed by project team.
 Please document here
 | Subdirectory Name | Description |
 |---|---|
-| test | contains the proposal for unit tests |
-| apiTest | contains the proposal for testing the API of the plugin |
-| uiTest | contains the proposal for testing the UI of the plugin |
+| For-Mainframe/src/test | contains the proposal for unit tests |
+| For-Mainframe/src/apiTest | contains the proposal for testing the API of the plugin |
+| For-Mainframe/src/uiTest | contains the proposal for testing the UI of the plugin |
