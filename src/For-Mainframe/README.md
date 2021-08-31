@@ -1,3 +1,6 @@
+# Important!!! 
+# Not all of this code has been made by us. The task for this project was to propose a way to test the For Mainframe plugin. The code developed by us can be found in the test, apiTest and uiTest directories.
+
 # For Mainframe
 "For Mainframe" brings support for browsing, editing and creating data on z/OS via 
 <a href="https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.4.0/com.ibm.zos.v2r4.izua700/V2R4/zosmf/izua700/IZUHPINFO_RESTServices.htm">z/OSMF REST API</a>.
