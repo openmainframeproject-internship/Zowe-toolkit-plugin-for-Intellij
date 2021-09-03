@@ -31,7 +31,7 @@ class ConnectionManager {
         welcomeFrame {
             open(projectName)
         }
-        Thread.sleep(300000)
+        Thread.sleep(600000)
         ideFrameImpl(projectName, stack) {
             dialog("For Mainframe Plugin Privacy Policy and Terms and Conditions") {
                 clickButton("I Agree")
