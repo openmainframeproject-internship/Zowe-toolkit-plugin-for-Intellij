@@ -59,3 +59,4 @@ jobs:
           ./gradlew build -x test
       - name: Run Ui Tests
         run: ./src/uiTest/resources/uiTest.sh
+
