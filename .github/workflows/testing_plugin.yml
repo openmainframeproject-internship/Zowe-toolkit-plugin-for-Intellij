@@ -16,7 +16,11 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: cd to plugin
-        run: cd src/For-Mainframe
+        run: ls
+      - run: cd src/
+      - run: ls
+      - run: cd For-Mainframe
+      - run: ls
       - name: Cache Gradle
         uses: actions/cache@v2
         with:
