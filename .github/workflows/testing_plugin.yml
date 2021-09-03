@@ -1,7 +1,7 @@
 name: testing_plugin
 on:
   push:
-    branches: [ ui ]
+    branches: [ master ]
 
 
 jobs:
