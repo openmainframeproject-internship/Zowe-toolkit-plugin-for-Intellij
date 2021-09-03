@@ -1,22 +1,33 @@
+# We define the name of the workflow.
 name: testing_plugin
+# The workflow will be run on push to the master branch.
 on:
   push:
     branches: [ master ]
+# The workflow will be run from src/For-Mainframe directory. The default is the root repository directory.
 defaults:
   run:
     working-directory: src/For-Mainframe
 
+# Jobs will be defined now.
 jobs:
+  # the first job will be called unitAndApi and will be run on a GitHub hosted runner with the latest version of ubuntu as its OS.
   unitAndApi:
     runs-on: ubuntu-latest
+    # The job will be run only if the commit message contains the phrase: "unit api".
     if: "contains(github.event.head_commit.message, 'unit api')"
+    # Steps of the unitAndApi job will be defined now.
     steps:
+      # Copies the working-directory to the runner.
       - uses: actions/checkout@v2
+      # Sets up JDK.
       - name: Set up JDK 11
+      # Sets up Java.
         uses: actions/setup-java@v2
         with:
           java-version: '11'
           distribution: 'adopt'
+      # Caches the gradle, so that the build is faster on the next run.
       - name: Cache Gradle
         uses: actions/cache@v2
         with:
@@ -26,22 +37,29 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-UnitAndAPI
+      # Builds the plugin.
       - name: Build with Gradle
         run: |
           gradle wrapper --gradle-version 6.8.1
           chmod +x gradlew
           ./gradlew build -x test
+      # Runs the unit tests.
       - name: Run Unit Tests
         run: ./gradlew test
+      # Runs the API tests, thanks to the if: always(), the API tests will be run even if the unit tests fail.
       - name: Run API Tests
         if: always()
         run: ./gradlew apiTest
+      # Cleans up some gradle files.
       - name: Cleanup Gradle Cache
         run: |
           rm -f ~/.gradle/caches/modules-2/modules-2.lock
           rm -f ~/.gradle/caches/modules-2/gc.properties
+          
+  #  The second job will be called unitAndApi and will be run on a GitHub hosted runner with the latest version of ubuntu as its OS.
   ui:
     runs-on: self-hosted
+    # The job will be run only if the commit message contains the phrase: "ui".
     if: "contains(github.event.head_commit.message, 'ui')"
     steps:
       - uses: actions/checkout@v2
