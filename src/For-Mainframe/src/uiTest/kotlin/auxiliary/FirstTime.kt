@@ -11,6 +11,7 @@ import auxiliary.containers.*
 import com.intellij.remoterobot.fixtures.ContainerFixture
 import com.intellij.remoterobot.search.locators.Locator
 import com.intellij.remoterobot.search.locators.byXpath
+import com.intellij.remoterobot.utils.waitFor
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Tag
 import java.time.Duration
@@ -30,8 +31,10 @@ class ConnectionManager {
         welcomeFrame {
             open(projectName)
         }
-        Thread.sleep(180000)
         ideFrameImpl(projectName, stack) {
+            waitFor(Duration.ofMinutes(10)) {
+                hasText("For Mainframe Plugin Privacy Policy and Terms and Conditions")
+            }
             dialog("For Mainframe Plugin Privacy Policy and Terms and Conditions") {
                 clickButton("I Agree")
             }
