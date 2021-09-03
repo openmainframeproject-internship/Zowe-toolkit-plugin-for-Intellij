@@ -31,10 +31,8 @@ class ConnectionManager {
         welcomeFrame {
             open(projectName)
         }
+        Thread.sleep(300000)
         ideFrameImpl(projectName, stack) {
-            waitFor(Duration.ofMinutes(10)) {
-                hasText("For Mainframe Plugin Privacy Policy and Terms and Conditions")
-            }
             dialog("For Mainframe Plugin Privacy Policy and Terms and Conditions") {
                 clickButton("I Agree")
             }
@@ -48,6 +46,5 @@ class ConnectionManager {
         }
     }
 }
-
 
 
