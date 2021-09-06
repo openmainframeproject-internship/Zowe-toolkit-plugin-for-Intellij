@@ -1,7 +1,7 @@
 # Important!!! 
 # Not all of this code has been made by us. The task for this project was to propose a way to test the For Mainframe plugin. The code developed by us can be found in the test, apiTest and uiTest directories.
 
-Because of the nature of this project, we have copied the code into this directory. It is older version of the plugin and contains bugs. If the original makers of the plugin, that is IBA Group a.s., want to take it down, please contact either me, MaliMi97 at 97malimi@gmail.com or the people in OMP and Linux Foundation.
+Because of the nature of this project, we have copied the code into this directory. It is older version of the plugin and contains bugs. If the original makers of the plugin, that is IBA Group a.s, want to take it down, please contact either me, MaliMi97 at 97malimi@gmail.com or the people in OMP and Linux Foundation.
 
 # For Mainframe
 "For Mainframe" brings support for browsing, editing and creating data on z/OS via 
