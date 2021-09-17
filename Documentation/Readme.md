@@ -3,7 +3,7 @@ The format that is used for the documentation is pdf. Although GitHub can show t
 
 The Detailed Designed consists of several documents, so you can easily skip some parts or return to a section in the future. For first read we recommend to read the files in the Detailed Design directory sequentially.
 
-The documentation is also written in this article: https://medium.com/@97malimi/testing-intellij-plugin-415c4ce014c6
+The Detailed Design is also written in this article: https://medium.com/@97malimi/testing-intellij-plugin-415c4ce014c6
 
 
 # Documentation Folder
